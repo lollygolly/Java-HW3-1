@@ -11,13 +11,16 @@
 */
 public class BonusMilesService {
     public int calculate(int price) {
-    int bonuses;
-    int miles;
-        if (price >= 20) {
+
+        int bonuses; // Вводим промежуточное значение бонуса, учитывающее назначение миль в зависимости от цены билета
+        int miles; // Вводим искомый параметр количества миль за покупку билета
+
+        if (price >= 20) { // Условие для начисления бонусов
             bonuses = 1;
-    } else {
+        } else {
             bonuses = 0;
         }
-    return miles = price / 20 * bonuses;
+
+        return miles = price / 20 * bonuses; // Вывод количества миль за покупку
     }
-        }
+}
